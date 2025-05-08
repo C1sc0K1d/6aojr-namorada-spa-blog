@@ -1,0 +1,22 @@
+<div class="header__container" #container>
+    <div class="header__home_title">
+        <img (click)="goHoome()" class="header__img" src="assets/images/home-button.png" alt="Home">
+        <span>Meu Blog</span>
+    </div>
+    <h2>Como agradar minha namorada</h2>
+    <div>
+        <button (click)="showDropdown()" class="header__menu_button"><img class="header__menu_img" src="assets/images/menu.png" alt="Menu"></button>
+        <ul class="header__dropdown-menu" *ngIf="dropdown">
+            <li>
+              <span (click)="showDropdown()" >Login</span>
+            </li>
+            <li>
+                <span (click)="showDropdown()" >SingIn</span>
+            </li>
+            <li>
+                <span (click)="showDropdown()" >About</span>
+            </li>
+        </ul>
+    </div>
+    
+</div>

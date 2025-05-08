@@ -1,0 +1,13 @@
+<div class="home__container">
+    <div class="home__card-grid">
+        <div 
+          class="home__card" 
+          *ngFor="let item of menuItems" 
+          [class.selected]="selectedItem === item"
+          (click)="selectItem(item.tipo)"
+        >
+          <h3>{{ item.tipo }}</h3>
+          <p>{{ item.descr }}</p>
+        </div>
+      </div>
+</div>

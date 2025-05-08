@@ -1,0 +1,15 @@
+<div class="listas__container">
+    <h2 class="titulo">Lista de {{ id }}</h2>
+  
+    <ul class="listas__coisas" *ngIf="coisas.length > 0; else carregando">
+      <li *ngFor="let coisa of coisas" class="listas__item_coisas">
+        <div class="listas__info">
+          <h3>{{ coisa.oque }}</h3>
+          <p>{{ coisa.descr }}</p>
+        </div>
+    </ul>
+  
+    <ng-template #carregando>
+      <p>Carregando informaçoes...</p>
+    </ng-template>
+  </div>
