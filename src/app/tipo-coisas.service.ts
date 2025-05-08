@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TipoCoisasService {
 
-  private apiUrl = 'http://18.231.216.12:8080/api/v1';
+  private apiUrl = 'https://18.231.216.12/api/v1';
   
     constructor(private http: HttpClient) {}
   
