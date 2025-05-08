@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CoisasService {
 
-  private apiUrl = 'http://localhost:8080/api/v1';
+  private apiUrl = 'http://18.231.216.12:8080/api/v1';
 
   constructor(private http: HttpClient) {}
 
